@@ -2,11 +2,72 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Food Listing App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A React-based web application for exploring food products using the OpenFoodFacts API.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Product search by name or barcode
+- Advanced filtering by categories and nutrients
+- Detailed product view with:
+  - Nutrition facts
+  - Ingredients
+  - Labels & tags (vegan, gluten-free, etc.)
+- Infinite scroll pagination
+- Dark mode support
+- Responsive design
+
+## Technical Approach
+
+1. **API Integration**:
+
+   - Used OpenFoodFacts API endpoints
+   - Implemented React Query for data fetching and caching
+   - Created custom hooks for API calls
+
+2. **State Management**:
+
+   - URL search params for filters
+   - Context API for dark mode
+   - React Query for server state
+
+3. **UI Components**:
+
+   - Built with Tailwind CSS
+   - Implemented skeleton loading states
+   - Responsive grid layout
+   - Accessible interactive elements
+
+4. **Performance Optimizations**:
+   - Debounced search inputs
+   - Lazy loading
+   - Paginated API requests
+
+## Development Timeline
+
+- Started: July 1, 2023
+- Completed: July 2, 2023
+- Testing: July 3, 2023
+- Total Time: Around 12 hours
+
+## Setup Instructions
+
+1. Clone repository:
+
+git clone https://github.com/shirajahmed/food_listing.git
+
+2. npm install
+
+3. npm run dev
+
+4. **Deployment**:
+
+- Deployed to Vercel: https://food-listing.vercel.app/
+
+5. **Time Tracking**:
+
+- Development: 10-12 hours total
+- Planning: 2 hours
+- Implementation: 8 to 10 hours
+- Testing/Debugging: 2 hours
